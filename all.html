@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <meta name="msapplication-navbutton-color" content="#000">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <title>DotSlash | Events</title>
+  </head>
+  <body>
+    <style>
+      html, body {
+        padding: 0px;
+        margin: 0px;
+
+        width: 100%;
+        height: 100%;
+
+        overflow-x: hidden;
+        background: rgba(0, 0, 0, 0.02);
+      }
+
+      footer {
+        width: 100%;
+        height: 70px;
+        padding-left: 2%;
+        padding-right: 2%;
+        color: whitesmoke;
+        background: black;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .full-height {
+        height: 100%;
+      }
+
+      .flexed {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .item.one, .item.two {
+        flex-grow: 1;
+        height: 92%;
+        overflow: hidden;
+
+        border-radius: 3px;
+        transition: all 1s cubic-bezier(.25,.8,.25,1);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      }
+
+      .item:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+      }
+
+      .item.one {
+        margin-left: 2%;
+        margin-right: 1%;
+      }
+
+      .item.two {
+        margin-left: 1%;
+        margin-right: 2%;
+      }
+
+      img {
+        display: block;
+      }
+
+      .heart {
+        font-size: 150%;
+        color: red;
+      }
+
+      .cesta {
+        width: 55%;
+      }
+
+      .dotslash {
+        width: 40%;
+      }
+
+      .full {
+        width: 100%;
+      }
+
+      .some {
+        width: 20%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      @media only screen and (max-width: 769px) {
+        .some {
+          width: 80%;
+        }
+
+        .full-height {
+          height: auto;
+        }
+
+        .flexed {
+          flex-direction: column;
+        }
+
+        .item.one, .item.two {
+          margin-left: 16px;
+          margin-right: 16px;
+        }
+
+        .item.one {
+          margin-top: 16px;
+          margin-bottom: 8px;
+        }
+
+        .item.two {
+          margin-bottom: 16px;
+          margin-top: 8px;
+        }
+
+        .cesta {
+          display: none;
+        }
+
+        .dotslash {
+          display: none;
+        }
+      }
+    </style>
+  
+    <div class="full flexed">
+      <img src="vik.png" class="some" />
+    </div>
+
+    <div class="full-height flexed">
+      <div class="item one">
+        <a href="http://vikiran.co.in/Welcome/team/3"><img src="bots.jpeg" class="full"></a>
+      </div>
+      <div class="item two">
+        <a href="http://vikiran.co.in/Welcome/team/20"><img src="idc.jpeg" class="full"></a>
+      </div>
+    </div>
+
+    <footer>
+      <div><img class="cesta" src="cesta.png"></div>
+      <div><tt>Made with <span class="heart">&#10084;</span> by DotSlash Community</tt></div>
+      <div><img class="dotslash" src="dotslash.png"></div>
+    </footer>
+
+  </body>
+</html>
